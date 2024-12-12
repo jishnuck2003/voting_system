@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voting system</title>
+    <style>
+       .container{
+        height: 60vh;
+        width: 70vw;
+        margin: 10px;
+        background-color: beige;
+        /* position: absolute; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        box-shadow: 2px 4px 3px 3px;
+       }
+       .claas_input_grp{
+        position: relative;
+        /* padding: 10px; */
+        /* border: 1px solid goldenrod; */
+        
+        
+
+        
+       }
+
+       .outer{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       }
+
+       #age{
+        height: 7vh;
+        width: 19vw;
+        border-radius: 8px;
+        box-shadow: 3px 3px 3px;
+        text-align: center;
+        margin: 1px solid gray;
+       }
+       #res{
+        text-align: center;
+        inset-block-start: 10px;
+        padding: 10px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="outer">
+        
+        <div class="container">
+            <form action="">
+                <div class="claas_input_grp">
+                    <input id="age" type="number" placeholder="enter your age" oninput="vote()">
+                    <h3 id="res"></h3>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="condition.js"></script>
+</body>
+</html>
